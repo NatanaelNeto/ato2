@@ -1,0 +1,272 @@
+<!-- Arquivo Base para HTML 2019
+
+ - Criado por mim, Natanael Enéas da Silva
+ - Neto em maio/2019. Usado em todos os projetos
+ - que houveram a minha participação.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<title>ATO II</title>
+		<meta name="description" content=""> <!-- Descrição -->
+		<meta name="og:type" content="website"> <!-- Tipo -->
+		<meta name="og:title" content=""> <!-- Título da página -->
+		<meta name="og:description" content=""> <!-- Descrição -->
+		<meta name="og:url" content=""> <!-- URL do site -->
+		<meta name="og:image" content=""> <!-- Imagem Facebook -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Viewport -->
+		<link rel="shortcut icon" href=""> <!--Fav-->
+		<link rel="stylesheet" href="style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Abel|Fira+Sans+Condensed:700|Questrial" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		<header>
+
+			<nav id="NavRetratil" class="hidden-s">
+
+				<div class="tamanho-pai">
+
+					<div class="container tamanho-pai">
+
+						<div class="g3 gap-right-3 tamanho-pai">
+
+							<div class="logo-menu">
+
+								<h1 id="NavLogo"><a href="index.html">ATO 2</a></h1>
+							</div>
+						</div>
+						<div class="g6 header-menu tamanho-pai">
+							
+							<ul>
+								<li><a href="#">Sobre</a></li>
+								<li><a href="#">Peças</a></li>
+								<li><a href="#">Eventos</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contato</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<nav class="hidden-l hidden-m mobile-menu">
+
+				<div class="container">
+
+					<div class="sg4">
+
+						<div class="logo-menu">
+
+							<h1><a href="index.html">ATO 2</a></h1>
+						</div>
+					</div>
+					<div class="sg4">
+
+							<ul>
+								<li><a href="#">Sobre</a></li>
+								<li><a href="#">Peças</a></li>
+								<li><a href="#">Eventos</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contato</a></li>
+							</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section class="home-noticia">
+
+			<button class="btnBack" onclick="btnBack()"><i class="fas fa-angle-left"></i></button>
+			<button class="btnProx" onclick="btnNext()"><i class="fas fa-angle-right"></i></button>
+			<ul id="slideshow">
+
+				<li>
+
+					<div class="imagem-fundo" style="background-image: url('img/01.jpg')"></div>
+					<div class="container noticia-container">
+
+						<h2 class="noticia-titulo">Sobre as Montanhas</h2>
+						<h3 class="noticia-subtitulo">Nova peça lançada hoje!</h3>
+						<p class="noticia-texto hidden-s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam aut adipisci explicabo doloremque maxime harum asperiores, odit dignissimos, iure ducimus quibusdam provident magni hic dolorem nisi deserunt dolore ad et.</p>
+						<p class="noticia-texto hidden-l hidden-m">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+						<a href="#sobre">Veja Agora!</a>
+					</div>
+				</li>
+
+				<li>
+
+					<div class="imagem-fundo" style="background-image: url('img/02.jpg')"></div>
+					<div class="container noticia-container">
+
+							<h2 class="noticia-titulo">Estudo Bíblico</h2>
+							<h3 class="noticia-subtitulo">Afinal, você é água ou vinho?</h3>
+							<p class="noticia-texto hidden-s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam aut adipisci explicabo doloremque maxime harum asperiores, odit dignissimos, iure ducimus quibusdam provident magni hic dolorem nisi deserunt dolore ad et.</p>
+							<p class="noticia-texto hidden-l hidden-m">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+							<a href="#estudo">Leia Sobre</a>
+					</div>
+				</li>
+
+				<li>
+
+					<div class="imagem-fundo" style="background-image: url('img/03.jpg')"></div>
+					<div class="container noticia-container">
+
+							<h2 class="noticia-titulo">Convocação</h2>
+							<h3 class="noticia-subtitulo">Venha trabalhar conosco!</h3>
+							<p class="noticia-texto hidden-s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam aut adipisci explicabo doloremque maxime harum asperiores, odit dignissimos, iure ducimus quibusdam provident magni hic dolorem nisi deserunt dolore ad et.</p>
+							<p class="noticia-texto hidden-l hidden-m">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+							<a href="#convoca">Inscreva-se!</a>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section class="home-cultos">
+
+			<div class="container">
+
+				<div class="sec-titulo sg4 g12"><h2>Nossa Semana</h2></div>
+				
+			</div>
+			<div class="container card-container">
+				<div class="g2 card-culto sg4">
+
+					<h3>Dom</h3>
+					<p>09:00 Culto Matinal</p>
+					<p>10:30 Escola Bíblica</p>
+					<p>18:00 Culto Noturno</p>
+				</div>
+				<div class="g2 card-culto sg4">
+
+					<h3>Ter</h3>
+					<p>19:00 Escola de Missões</p>
+					<p>19:00 MCM</p>
+				</div>
+				<div class="g2 card-culto sg4">
+
+					<h3>Qua</h3>
+					<p>18:00 Culto de Oração</p>
+				</div>
+				<div class="g2 card-culto sg4">
+
+					<h3>Qui</h3>
+					<p>19:00 Ensaio do Coral</p>
+					<p>19:00 Ensaio do Coreart</p>
+				</div>
+				<div class="g2 card-culto sg4">
+
+					<h3>Sex</h3>
+					<p>14:00 Artesanato da 3ª Idade</p>
+				</div>
+				<div class="g2 card-culto sg4">
+
+					<h3>Sab</h3>
+					<p>18:00 Trilho</p>
+				</div>
+			</div>
+			<p>Venha nos visitar na Rua Dona Ana Aurora.</p>
+		</section>
+
+		<section class="home-blog-eventos">
+
+			<div class="container">
+
+				<div class="g8 sg4 blog-info">
+
+					<div class="sec-titulo"><h2>Blog</h2></div>
+					<a href="#"><h3 class="blog-titulo">Água ou Vinho?</h3></a>
+					<p class="blog-autor">por Natanael Neto</p>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit eos officiis libero esse eligendi itaque vitae, modi omnis neque at recusandae quia dolorem, optio fugiat sequi aliquid ullam sint corporis.</p>
+					<p class="hidden-s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit eos officiis libero esse eligendi itaque vitae, modi omnis neque at recusandae quia dolorem, optio fugiat sequi aliquid ullam sint corporis.</p>
+					<div class="a-btn"><a href="#">Ler mais</a></div>
+				</div>
+				<div class="g4 sg4 evento-info">
+
+						<div class="sec-titulo"><h2>Eventos</h2></div>
+						<div class="eventos-lista">
+
+							<ul>
+								<li><p>ABRIL</p>
+									<ul>
+										<li>06 - Café Conexão</li>
+										<li>27 - Conferência CTRL+D</li>
+									</ul>
+								</li>
+								<li><p>JUNHO</p>
+									<ul>
+										<li>28, 29 e 30 - Encontro de Jovens com Cristo</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="home-videos">
+
+			<div class="container">
+
+				<div class="g4 sg4">
+
+					<div class="sec-titulo"><h2>Jesus Culture - Freedom</h2></div>
+					<p>Assista agora, e acompanhe nosso Canal no youtube.</p>
+				</div>
+				<div class="g8 hidden-s video-video">
+
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/dKxeZsZvp7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="sg4 hidden-m hidden-l">
+
+						<iframe width="288" src="https://www.youtube.com/embed/dKxeZsZvp7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<footer>
+
+			<div class="container">
+
+				<div class="g3 sg2">
+
+					<h3>Horário dos Cultos</h3>
+					<ul><p>Domingo</p>
+						<li>09:00 - Culto Matinal</li>
+						<li>18:00 - Culto Noturno</li>
+					</ul>
+					<ul><p>Quarta</p>
+						<li>18:30 - Culto de Oração</li>
+					</ul>
+				</div>
+				<div class="g3 sg2">
+
+					<h3>Nosso Site</h3>
+					<ul>
+						<li><a href="#">Sobre</a></li>
+						<li><a href="#">Peças</a></li>
+						<li><a href="#">Eventos</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contato</a></li>
+					</ul>
+				</div>
+				<div class="g6 sg4">
+					<h3>Redes Sociais</h3>
+					<div class="footer-redes">
+
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+			<p class="container footer-final">Site abençoado e produzido por Ministério de Comunicação 2IBA. Alguns direitos reservados. Icons by <a href="https://fontawesome.com">Fonts Awesome</a>.</p>
+		</footer>
+		<script src="js.js"></script>
+	</body>
+</html>

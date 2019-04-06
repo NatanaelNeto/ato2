@@ -1,0 +1,151 @@
+/*Arquivo CSS Base - 2018
+
+
+ - Criado por mim, Natanael Enéas da Silva
+ - Neto em maio/2018. Usado em todos os projetos
+ - que houveram a minha participação.
+
+ */
+
+
+
+/*===== RESETS =====*/
+
+a{
+	text-decoration: none;
+}
+ol, ul{
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/*===== SISTEMA DE GRIDS =====*/
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0px;
+	position: relative;
+}
+
+.container:after, .container:before {
+	content: " ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+.center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/*===== RESPONSIVO - COMPUTADORES =====*/
+
+@media only screen and (min-width: 960px){
+
+	.hidden-l{display: none;}
+
+	.container{width: 960px;}
+
+	.g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12 {
+		float: left;
+		margin: 0px 10px;
+	}
+
+	.g1{width: 60px;}
+	.g2{width: 140px;}
+	.g3{width: 220px;}
+	.g4{width: 300px;}
+	.g5{width: 380px;}
+	.g6{width: 460px;}
+	.g7{width: 540px;}
+	.g8{width: 620px;}
+	.g9{width: 700px;}
+	.g10{width: 780px;}
+	.g11{width: 860px;}
+	.g12{width: 940px;}
+
+	.gap-right-1{margin-right: 90px;}
+	.gap-right-2{margin-right: 170px;}
+	.gap-right-3{margin-right: 250px;}
+	.gap-right-4{margin-right: 330px;}
+	.gap-right-5{margin-right: 410px;}
+	.gap-right-6{margin-right: 490px;}
+	.gap-right-7{margin-right: 570px;}
+	.gap-right-8{margin-right: 650px;}
+	.gap-right-9{margin-right: 730px;}
+	.gap-right-10{margin-right: 810px;}
+
+}
+
+/*===== RESPONSIVO - TABLETS =====*/
+
+@media only screen and (max-width: 959px) and (min-width: 768px){
+	
+	.hidden-m{display: none;}
+
+	.container{width: 768px;}
+
+	.g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12 {
+		float: left;
+		margin: 0px 8px;
+	}
+
+	.g1{width: 48px;}
+	.g2{width: 112px;}
+	.g3{width: 176px;}
+	.g4{width: 240px;}
+	.g5{width: 304px;}
+	.g6{width: 368px;}
+	.g7{width: 432px;}
+	.g8{width: 496px;}
+	.g9{width: 560px;}
+	.g10{width: 624px;}
+	.g11{width: 688px;}
+	.g12{width: 752px;}
+
+	.gap-right-1{margin-right: 72px;}
+	.gap-right-2{margin-right: 128px;}
+	.gap-right-3{margin-right: 184px;}
+}
+
+/*===== RESPONSIVO - CELULARES =====*/
+
+@media only screen and (max-width: 767px){
+	
+	.hidden-s{display: none;}
+
+	.container{width: 300px;}
+
+	.sg1, .sg2, .sg3, .sg4, .sgt, .s2gt{
+		float: left;
+		margin: 0px 6px;
+	}
+
+	.sg1{width: 63px;}
+	.sg2{width: 138px;}
+	.sg3{width: 213px;}
+	.sg4{width: 288px;}
+	.sgt{width: 88px;}
+	.s2gt{width: 188px;}
+}
